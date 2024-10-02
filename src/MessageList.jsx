@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-const MessageList = ({ user, messages, onDeleteMessage }) => { 
+export default function MessageList({ user, messages, onDeleteMessage }) {
   return (
+    <div>
     <div className="h-[49vh] overflow-y-auto mb-4 bg-chat-background p-4 rounded-2xl">
       {messages.map((msg, index) => {
         return (
@@ -34,7 +35,6 @@ const MessageList = ({ user, messages, onDeleteMessage }) => {
         );
       })}
     </div>
-  );
-};
-
-export default MessageList;
+    </div>
+  )
+}

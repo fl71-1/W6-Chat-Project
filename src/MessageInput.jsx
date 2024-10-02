@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const MessageInput = ({ onSendMessage, setIsTyping, user }) => { 
+function MessageInput  ({ onSendMessage, setIsTyping, user })  { 
   const [message, setMessage] = useState(''); 
   const handleSendMessage = () => {
     if (message.trim()) { 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import MessageList from './MessageList';
 import MessageInput from './MessageInput';
 
-const ChatWindow = ({ user, messages, onSendMessage, onDeleteMessage, isOnline }) => {
+function ChatWindow ({ user, messages, onSendMessage, onDeleteMessage, isOnline })  {
   const [isTyping, setIsTyping] = useState(false); 
   return (
     <div className="w-[22vw] h-[70vh] max-sm:w-full max-w-md bg-[url(https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg)] rounded-3xl shadow-lg border border-gray-200 ">
